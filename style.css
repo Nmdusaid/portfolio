@@ -327,7 +327,8 @@ h1 {
 
 
 #project>p {
-    width: 100%;
+    width: 90%;
+    line-height: 30px;
     text-align: center;
     font-size: 20px;
     font-family: "Inria Sans", sans-serif;
@@ -513,14 +514,15 @@ button {
     border-radius: 10px;
 }
 #input-range {
-    width: 93%;
+    width: auto;
 }
 .bio-input>h4 {
-    margin-right: 5px;
+    margin-right: 9px;
 }
 #project>p {
     width: 78%;
     text-align: center;
+    line-height: 22px;
     font-size: 17px;
     font-family: "Inria Sans", sans-serif;
 }
@@ -544,6 +546,17 @@ button {
     gap: 0px;
     flex-wrap: wrap;
 }
-  
+h1 {
+    width: 100%;
+    text-align: center;
+    line-height: 59px;
+}
+#project > h4 {
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    line-height: 57px;
+}
 
 }
