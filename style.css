@@ -79,10 +79,11 @@ nav ul {
         display: flex;
         background: #000;
         color: white;
+        z-index: 3;
 
     }
     nav ul.active:hover {
-        background: tomato;
+     
         text-decoration: underline;
         transition: 1s all ease-in-out;
         
@@ -255,7 +256,7 @@ transition:0.75 all ease-in-out;
     color: aliceblue;
     background: orangered;
     border-radius: 10px;
-    width: 30%;
+width: auto;
     font-family: monospace;
 }
 #bu:hover{
@@ -461,7 +462,7 @@ textarea:hover {
         width: 15ch;
         color: white;
         font-family: monospace;
-        font-size: 17px;
+        font-size: 15px;
         border-right: 2px solid white;
         white-space: nowrap;
         overflow: hidden;
@@ -484,7 +485,7 @@ textarea:hover {
         color: aliceblue;
         background: orangered;
         border-radius: 10px;
-        width: 35%;
+        
         height: 3vh;
         font-family: monospace;
     }
@@ -531,6 +532,7 @@ button {
     width: 327px;
 }
 .parent {
+    overflow: hidden;
     width: 100%;
     height: auto;
     background: #fcfcfc;
