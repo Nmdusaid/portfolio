@@ -13,12 +13,13 @@ skbtn.addEventListener('click',()=>{
 })
 exbtn.addEventListener('click',() =>{
 skill.style.display='none'
+education.style.display='none'
 experience.style.display='block'
 })
 edbtn.addEventListener('click',()=>{
+  experience.style.display='none'
     education.style.display='block'
     skill.style.display='none'
-experience.style.display='none'
 })
 document.getElementById("hamburger").addEventListener("click", function () {
     const navList = document.querySelector("nav ul");

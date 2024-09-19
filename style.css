@@ -23,7 +23,7 @@ nav ul {
     border-right: 2px solid white; /* Simulates a cursor */
     white-space: nowrap; /* Prevents text from wrapping */
     overflow: hidden; /* Hides text until it is typed */
-    animation: typing 10s steps(23) 1s forwards, blink 0.75s step-end infinite;
+    animation: typing 5s steps(23) 1s forwards, blink 0.75s step-end infinite;
 }
 
 @keyframes typing {
@@ -47,6 +47,46 @@ nav ul {
     cursor: pointer;
 }
 
+@media (max-width: 777px){
+    #hamburger {
+        font-size: 25px;
+        margin: 15px;
+        color: white;
+        display: block;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+    nav ul li {
+        text-align: center;
+        padding: 15px;
+    }
+
+    nav ul li a {
+        color: #fff;
+    }
+    #input-range {
+        width: 99% !important;
+    }
+    nav ul.active {
+        display: flex;
+        background: #000;
+        color: white;
+        z-index: 3;
+
+    }
+}
+@media (max-width: 761px){
+    #input-range {
+        width: 86% !important;
+    }
+}
 
 @media (max-width: 650px) {
     nav ul {
@@ -134,11 +174,11 @@ ul>li {
 
 ul>li>a {
     
-    font-family: 'Lato', sans-serif;
-
+    font-family: "Ubuntu Mono", monospace;
+font-weight:1000;
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 ul>li>a:hover {
@@ -304,17 +344,24 @@ button:hover {
 border-radius: 7px;
     text-decoration: none;
     color: rgb(0, 0, 0);
+  font-family: monospace;
   
     
 }
 
 .p-btn:hover {
- transition: 1s all ease-in-out;
-    background: black;
-    color: white;
+background: #000;
+color: white;
+transition:1s all ease-in-out;
+  
     
 }
-
+.bio>h3{
+    font-size: 20px;
+}
+.bio>p{
+    font-family: monospace;
+}
 
 h1 {
     width: 100%;
@@ -409,11 +456,14 @@ header {
 }
 
 h3 {
+    font-family:Arial, Helvetica, sans-serif;
     font-size: 23px;
 }
 
 .bio>p {
     font-size: 23px;
+    font-family: "Inria Sans", sans-serif;
+    font-weight:400;
 }
 
 input {
@@ -510,6 +560,7 @@ textarea:hover {
 .bio>p {
     font-size: 21px;
     text-align: center;
+    font-family: "Alegreya", serif;
 }
 button {
     cursor: pointer;
