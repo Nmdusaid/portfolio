@@ -469,9 +469,19 @@ h3 {
 input {
     width: 60%;
 }
-
-
-
+input::placeholder {
+    color: rgb(95, 95, 95); 
+    opacity: 1;  
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  textarea::placeholder{
+    color: rgb(95, 95, 95); 
+    opacity: 1;  
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
 #Contact>.child {
     height: auto;
     color: black;
