@@ -12,7 +12,7 @@ body {
 /* For desktop screens */
 nav ul {
     display: flex;
-    gap: 20px;
+    gap: 1px;
 }
 .nav-item>h5 {
     margin: 25px;
@@ -50,7 +50,7 @@ nav ul {
 @media (max-width: 777px){
     #hamburger {
         font-size: 25px;
-        margin: 15px;
+        margin: 20px;
         color: white;
         display: block;
     }
@@ -112,10 +112,11 @@ nav ul {
     }
 
     #hamburger {
-        font-size: 20px;
-        margin: 15px;
+        font-size: 26px;
+        margin: 20px;
         color: white;
         display: block;
+        
     }
 
     nav ul.active {
@@ -165,20 +166,17 @@ img {
 }
 
 ul>li {
- 
-
+    width: auto;
     list-style: none;
-    padding: 10px 25px;
-    margin: 10px;
+    padding: 21px 20px;
+    margin: 3px;
 }
-
 ul>li>a {
-    
     font-family: "Ubuntu Mono", monospace;
-font-weight:1000;
+    font-weight: 1000;
     text-decoration: none;
     color: white;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 ul>li>a:hover {
@@ -545,6 +543,13 @@ textarea:hover {
         text-decoration: none;
         padding: 10px;
         margin: 10px;
+    }
+    #hamburger {
+        font-size: 20px;
+        margin: 20px;
+        color: white;
+        display: block;
+        
     }
     nav{
         z-index: 3;
